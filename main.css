@@ -24,6 +24,7 @@ fieldset {
 }
 
 .answerOption {
+	align-items: center;
 	border: 1px solid black;
 	display: flex;
 	margin-bottom: 16px;
