@@ -5,6 +5,7 @@ body * {
 body {
 	margin: auto;
 	max-width: 768px;
+	padding: 28px;
 }
 
 header {
@@ -18,8 +19,22 @@ header {
 
 fieldset {
 	border: none;
+	padding: 0;
+	text-align: center;
 }
 
 .answerOption {
+	border: 1px solid black;
 	display: flex;
+	margin-bottom: 16px;
+	padding: 16px;
+}
+
+input[type=radio] {
+	margin-right: 12px;
+}
+
+.submitButton {
+	margin: auto;
+	padding: 12px;
 }
