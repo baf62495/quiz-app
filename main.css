@@ -1,16 +1,34 @@
-body * {
+* {
 	box-sizing: border-box;
 }
 
+html {
+	height: 100vh;
+}
+
 body {
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	max-width: 768px;
+	min-height: 100vh;
 	padding: 28px;
 }
 
 header {
 	align-items: center;
 	display: flex;
+}
+
+main, .question, .questionForm {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+.question h2 {
+	flex-grow: 1;
+	max-height: 180px;
 }
 
 .score {
