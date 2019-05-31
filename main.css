@@ -4,6 +4,20 @@ body * {
 	padding: 0;
 }
 
+body {
+	margin: auto;
+	max-width: 768px;
+}
+
+header {
+	align-items: center;
+	display: flex;
+}
+
+.score {
+	margin-left: auto;
+}
+
 fieldset {
 	border: none;
 }
