@@ -28,7 +28,7 @@ main, .question, .questionForm {
 
 .question h2 {
 	flex-grow: 1;
-	max-height: 180px;
+	max-height: 160px;
 }
 
 .score {
