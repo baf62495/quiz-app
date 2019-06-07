@@ -16,8 +16,7 @@ body {
 }
 
 header {
-	align-items: center;
-	display: flex;
+	text-align: center;
 }
 
 main, .question, .question-form {
@@ -29,6 +28,11 @@ main, .question, .question-form {
 .question h2 {
 	flex-grow: 1;
 	max-height: 160px;
+}
+
+.quiz-info {
+	display: flex;
+	border-bottom: 1px solid black;
 }
 
 .score {
