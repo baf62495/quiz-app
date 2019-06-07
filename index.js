@@ -8,6 +8,10 @@ function generateQuestionHtml() {
 	console.log(`generateQuestionHtml ran`);
 }
 
+function generateQuizInfoHtml() {
+	
+}
+
 function incrementQuestionNumber() {
 	// increment question number
 	// take question number and add 1 to index (question 1 is 1, not 0)

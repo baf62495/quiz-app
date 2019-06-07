@@ -1,14 +1,14 @@
 const STORE = [
 	{
-		question: ' ',
+		question: '',
 		answerChoices: [
-			' ',
-			' ',
-			' ',
-			' '
+			'',
+			'',
+			'',
+			''
 			],
-		correctAnswer: ' ',
-		answerStatement: ' ',
-		funFact: ' '
+		correctAnswer: '',
+		answerStatement: '',
+		funFact: ''
 	},
 ];
