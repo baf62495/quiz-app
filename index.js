@@ -7,6 +7,15 @@ function generateQuestionHtml() {
 	// generate html based on question objects
 }
 
+function incrementQuestionNumber() {
+	// increment question number
+	// take question number and add 1 to index (question 1 is 1, not 0)
+}
+
+function incrementUserScore() {
+	// increment userScore
+}
+
 function startQuiz() {
 	// user starts quiz on button click
 	// on main screen button click =>
@@ -26,7 +35,7 @@ function userSubmitAnswer() {
 }
 
 function ifAnswerIsCorrect() {
-	// if correct =>
+	// if answer is correct =>
 		// increment score by 1
 		// render correct feedback html
 		// render button(next)
@@ -34,7 +43,7 @@ function ifAnswerIsCorrect() {
 }
 
 function ifAnswerIsWrong() {
-	// if wrong =>
+	// if answer is wrong =>
 		// render wrong feedback html
 		// add user choice in html
 		// render button(next)
