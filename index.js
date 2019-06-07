@@ -44,18 +44,23 @@ function ifAnswerIsCorrect() {
 	// if answer is correct =>
 		// increment score by 1
 		// render correct feedback html
-		// render button(next)
-		// render fun fact in html
 	console.log(`ifAnswerIsCorrect ran`);
 }
 
 function ifAnswerIsWrong() {
 	// if answer is wrong =>
 		// render wrong feedback html
-		// add user choice in html
-		// render button(next)
-		// render fun fact in html
 	console.log(`ifAnswerIsWrong ran`);
+}
+
+function renderCorrectAnswerHtml() {
+	// generate correct answer html
+	console.log(`renderCorrectAnswerHtml ran`);
+}
+
+function renderWrongAnswerHtml() {
+	// generate wrong answer html
+	console.log(`renderWrongAnswerHtml ran`);
 }
 
 function updateScore() {
@@ -94,7 +99,6 @@ function createQuiz() {
   renderQuestion();
   userSubmitAnswer();
   renderNextQuestion();
-  console.log(`createQuiz ran`);
 }
 
 $(createQuiz);
