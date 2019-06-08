@@ -52,6 +52,7 @@ function incrementQuestionNumber() {
 
 function incrementUserScore() {
 	// increment userScore
+	userScore++;
 	console.log(`incrementUserScore ran`);
 }
 
@@ -63,9 +64,11 @@ function startQuiz() {
 		// render question number(1)
 
 	$('.js-quiz-start').on('click', '.js-start-button', function(event) {
+
 		$('.js-quiz-start').remove();
 		$('.question-container').css('display', 'flex');
 		$('.js-question-number').text(1);
+
 	});
 
 	console.log(`startQuiz ran`);
@@ -107,28 +110,60 @@ function ifAnswerIsCorrect() {
 	// if answer is correct =>
 		// increment score by 1
 		// render correct feedback html
+
+	renderCorrectAnswerHtml();
+
+	updateScore();
+
 	console.log(`ifAnswerIsCorrect ran`);
 }
 
 function ifAnswerIsWrong() {
 	// if answer is wrong =>
 		// render wrong feedback html
+
+	renderWrongAnswerHtml();
+
 	console.log(`ifAnswerIsWrong ran`);
 }
 
 function renderCorrectAnswerHtml() {
 	// generate correct answer html
+
+	$('.question-form').html(`<div class="feedback feedback-correct">
+										<h1>Correct!</h1>
+										<h2>${STORE[questionNumber].answerStatement}</h2>
+										<button type="submit" class="button js-next-question">Next Question</button>
+									</div>
+									`);
+
 	console.log(`renderCorrectAnswerHtml ran`);
 }
 
 function renderWrongAnswerHtml() {
 	// generate wrong answer html
+
+	let selectedAnswer = $('input:checked').val();
+
+	$('.question-form').html(`<div class="feedback feedback-wrong">
+										<h1>Incorrect!</h1>
+										<h2>${STORE[questionNumber].answerStatement}</h2>
+										<p class="user-answer">You answered: ${selectedAnswer}</p>
+										<button type="submit" class="button js-next-question">Next Question</button>
+									</div>
+									`);
+
 	console.log(`renderWrongAnswerHtml ran`);
 }
 
 function updateScore() {
 	// increment score =>
-		// change html to show current score
+		// change html to show current user score
+
+	incrementUserScore();
+
+	$('.js-current-score').text(userScore);
+
 	console.log(`updateScore ran`);
 }
 
