@@ -19,8 +19,17 @@ header {
 	text-align: center;
 }
 
-main, .question, .question-form {
+.question{
 	display: flex;
+}
+
+.question-container {
+	display: none;
+}
+
+.question-form,
+.question,
+.question-container {
 	flex-grow: 1;
 	flex-direction: column;
 }
@@ -30,9 +39,16 @@ main, .question, .question-form {
 	max-height: 160px;
 }
 
-.quiz-info {
-	display: flex;
+.quiz-head {
+	display: none;
+	flex-wrap: wrap;
 	border-bottom: 1px solid black;
+}
+
+.quiz-head figure {
+    flex-basis: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .score {

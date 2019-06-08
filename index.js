@@ -2,9 +2,41 @@
 let questionNumber = 0;
 let userScore = 0;
 
+
 function generateQuestionHtml() {
 	// starts on display: none
 	// generate html based on question objects
+
+	if (questionNumber < STORE.length) {
+		return `<div class="question">
+					<h2>${STORE[questionNumber].question}</h2>
+					<form>
+						<fieldset>
+							<label class="answer-option js-answer-option">
+								<input type="radio" name="answer" value="${STORE[questionNumber].answerChoices[0]}" required>
+								<span>${STORE[questionNumber].answerChoices[0]}</span>
+							</label>
+							<label class="answer-option js-answer-option">
+								<input type="radio" name="answer" value="${STORE[questionNumber].answerChoices[1]}" required>
+								<span>${STORE[questionNumber].answerChoices[1]}</span>
+							</label>
+							<label class="answer-option js-answer-option">
+								<input type="radio" name="answer" value="${STORE[questionNumber].answerChoices[2]}" required>
+								<span>${STORE[questionNumber].answerChoices[2]}</span>
+							</label>
+							<label class="answer-option js-answer-option">
+								<input type="radio" name="answer" value="${STORE[questionNumber].answerChoices[3]}" required>
+								<span>${STORE[questionNumber].answerChoices[3]}</span>
+							</label>
+							<button type="submit" class="submit-button js-submit-button">Submit</button> 
+						</fieldset>
+					</form>
+				</div>`
+	} else {
+		renderResults();
+		restartQuiz();
+	}
+
 	console.log(`generateQuestionHtml ran`);
 }
 
@@ -29,6 +61,13 @@ function startQuiz() {
 		// remove main screen html
 		// show question form html
 		// render question number(1)
+
+	$('.js-quiz-start').on('click', '.js-start-button', function(event) {
+		$('.js-quiz-start').remove();
+		$('.question-container').css('display', 'flex');
+		$('.js-question-number').text(1);
+	});
+
 	console.log(`startQuiz ran`);
 }
 
@@ -95,6 +134,10 @@ function renderResults() {
 				// render fail feedback html
 				// add score to feedback html
 	console.log(`renderResults ran`);
+}
+
+function restartQuiz() {
+	// reload page on button click
 }
 
 

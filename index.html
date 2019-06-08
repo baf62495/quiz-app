@@ -9,45 +9,28 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<header role="banner">
+	<header role="banner" class="quiz-start js-quiz-start">
 		
-		<img src="#" alt="Logo">
+			<figure>
+				<img src="#" alt="Main Logo">
+			</figure>
+			<button type="submit" class="start-button js-start-button">Submit</button>
 
 	</header>
 
 
-	<main role="main">
+	<main role="main" class="question-container">
 
-		<div class="quiz-info">
+		<div class="quiz-head">
+			<figure>
+				<img src="#" alt="Logo">
+			</figure>
 			<p class="question-number">Question <span class="js-question-number">0</span>/10</p>
-			<p class="score">Score:<span class="currentScore">0</span></p>
+			<p class="score">Score: <span class="js-current-score">0</span></p>
 		</div>
 
 		<div class="question-form js-question-form">
-			<div class="question question-0">
-				<h2>In which of the following seasons, did Martin Brodeur win the Calder Trophy?</h2>
-				<form>
-					<fieldset>
-						<label class="answer-option js-answer-option">
-							<input type="radio" name="answer" value="Lorem ipsum dolor sit amet" required>
-							<span>1995-1996</span>
-						</label>
-						<label class="answer-option js-answer-option">
-							<input type="radio" name="answer" value="Lorem ipsum dolor sit amet" required>
-							<span>1999-2000</span>
-						</label>
-						<label class="answer-option js-answer-option">
-							<input type="radio" name="answer" value="Lorem ipsum dolor sit amet" required>
-							<span>1994-1995</span>
-						</label>
-						<label class="answer-option js-answer-option">
-							<input type="radio" name="answer" value="Lorem ipsum dolor sit amet" required>
-							<span>1993-1994</span>
-						</label>
-						<button type="submit" class="submit-button js-submit-button">Submit</button> 
-					</fieldset>
-				</form>
-			</div>
+			
 		</div>
 
 	</main>
