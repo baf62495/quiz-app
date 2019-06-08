@@ -19,12 +19,13 @@ header {
 	text-align: center;
 }
 
-.question{
-	display: flex;
-}
-
 .question-container {
 	display: none;
+}
+
+.question,
+.question-form {
+	display: flex;
 }
 
 .question-form,
@@ -40,7 +41,7 @@ header {
 }
 
 .quiz-head {
-	display: none;
+	display: flex;
 	flex-wrap: wrap;
 	border-bottom: 1px solid black;
 }

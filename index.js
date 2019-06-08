@@ -73,6 +73,9 @@ function startQuiz() {
 
 function renderQuestion() {
 	// render (generateQuestionHtml)
+
+	$('.js-question-form').html(generateQuestionHtml());
+
 	console.log(`renderQuestion ran`);
 }
 
