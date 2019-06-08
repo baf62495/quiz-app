@@ -83,6 +83,23 @@ function userSubmitAnswer() {
 	// user submits answer
 		// when user submits answer =>
 			// check answer
+	$('.js-question-form').on('submit', function(event) {
+
+		let selectedAnswer = $('input:checked').val();
+		let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
+
+		event.preventDefault();
+
+		if (selectedAnswer === correctAnswer ) {
+			ifAnswerIsCorrect();
+		} else {
+			ifAnswerIsWrong();
+		}
+
+	});
+
+	// event.preventDefault();
+
 	console.log(`userSubmitAnswer ran`);
 }
 
