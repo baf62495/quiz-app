@@ -8,7 +8,7 @@ const STORE = [
 			'1995'
 			],
 		correctAnswer: '1988',
-		answerStatement: `The first year the Devils qualified for the Stanley Cup Playoffs was in ${this.correctAnswer}!`,
+		answerStatement: `The first year the Devils qualified for the Stanley Cup Playoffs was in 1988!`,
 		funFact: 'The Devils clinched a playoff spot in the last game of the 1988 regular season, with a win against the Blackhawks.'
 	},
 	{
@@ -20,7 +20,7 @@ const STORE = [
 			'Stephan Richer'
 			],
 		correctAnswer: 'Neal Broten',
-		answerStatement: `${this.correctAnswer} scored the Stanley Cup winning goal for the Devils in 1995!`,
+		answerStatement: `Neal Broten scored the Stanley Cup winning goal for the Devils in 1995!`,
 		funFact: 'Neal Broten became one of the few American-born players to score a Cup winning goal.'
 	},
 	{
@@ -32,7 +32,7 @@ const STORE = [
 			'1993-1994'
 			],
 		correctAnswer: '1993-1994',
-		answerStatement: `Martin Brodeur won the Calder Trophy in ${this.correctAnswer}!`,
+		answerStatement: `Martin Brodeur won the Calder Trophy in 1993-1994!`,
 		funFact: 'Martin Brodeur and Scott Gomez are the only players in New Jersey Devils history to ever win the Calder Trophy.'
 	},
 	{
@@ -44,7 +44,7 @@ const STORE = [
 			'Larry Robinson'
 			],
 		correctAnswer: 'Larry Robinson',
-		answerStatement: `${this.correctAnswer} was the coach of the Devils' Stanley Cup winning team!`,
+		answerStatement: `Larry Robinson was the coach of the Devils' Stanley Cup winning team!`,
 		funFact: 'Larry Robinson, Hall of Fame defenseman, was nicknamed "Big Bird", during his playing days in Montreal.'
 	},
 	{
@@ -56,7 +56,7 @@ const STORE = [
 			'7'
 			],
 		correctAnswer: '4',
-		answerStatement: `The Devils swept the 1995 Stanley Cup Finals in ${this.correctAnswer} games!`,
+		answerStatement: `The Devils swept the 1995 Stanley Cup Finals in 4 games!`,
 		funFact: 'In the 1995 season, the Devils captured their first Stanley Cup in a 4 game sweep, of the heavily favored Detroit Red Wings.'
 	},
 	{
@@ -68,7 +68,7 @@ const STORE = [
 			'Brooklyn Americans'
 			],
 		correctAnswer: 'Kansas City Scouts',
-		answerStatement: `In 1974, the Devils\' franchise started out as the ${this.correctAnswer}!`,
+		answerStatement: `In 1974, the Devils\' franchise started out as the Kansas City Scouts!`,
 		funFact: 'Two years after the start of the franchise, the Scouts moved to Denver and became the Colorado Rockies.'
 	},
 	{
@@ -80,7 +80,7 @@ const STORE = [
 			'4th'
 			],
 		correctAnswer: '1st',
-		answerStatement: `The Devils selected Scott Gomez with their ${this.correctAnswer} round pick in the 1998 Entry Draft!`,
+		answerStatement: `The Devils selected Scott Gomez with their 1st round pick in the 1998 Entry Draft!`,
 		funFact: 'Scott justified the Devils’ decision by scoring 108 points in 58 games for the Tri-City Americans of the WHL.'
 	},
 	{
@@ -92,7 +92,7 @@ const STORE = [
 			'Scott Stevens'
 			],
 		correctAnswer: 'Scott Stevens',
-		answerStatement: `The Captain of the New Jersey Devils in 2003 was ${this.correctAnswer}!`,
+		answerStatement: `The Captain of the New Jersey Devils in 2003 was Scott Stevens!`,
 		funFact: 'Scott Stevens captained the New Jersey Devils from 1992 to 2004, for a total of 12 straight seasons.'
 	},
 	{
@@ -104,7 +104,7 @@ const STORE = [
 			'Carolina Hurricanes'
 			],
 		correctAnswer: 'New York Rangers',
-		answerStatement: `The Devils held a 20 game unbeaten streak against the ${this.correctAnswer}!`,
+		answerStatement: `The Devils held a 20 game unbeaten streak against the New York Rangers!`,
 		funFact: 'The Devils scored 72 goals to the Rangers 38, and managed 14 wins, six ties, and one shutout over this span.'
 	},
 	{
@@ -116,7 +116,7 @@ const STORE = [
 			'2000'
 			],
 		correctAnswer: '1992',
-		answerStatement: `The Devils wore the color green as a part of their wardrobe for the last time in ${this.correctAnswer}!`,
+		answerStatement: `The Devils wore the color green as a part of their wardrobe for the last time in 1992!`,
 		funFact: 'The green on the jerseys was removed and replaced with black, and less stripes appeared on the sweater as well.'
 	}
 ];
