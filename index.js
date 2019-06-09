@@ -40,13 +40,14 @@ function generateQuestionHtml() {
 	console.log(`generateQuestionHtml ran`);
 }
 
-function generateQuizInfoHtml() {
-	
-}
-
 function incrementQuestionNumber() {
 	// increment question number
 	// take question number and add 1 to index (question 1 is 1, not 0)
+
+	questionNumber++;
+
+	$('.js-question-number').text(questionNumber + 1);
+
 	console.log(`incrementQuestionNumber ran`);
 }
 
@@ -88,12 +89,13 @@ function userSubmitAnswer() {
 			// check answer
 	$('.js-question-form').on('submit', function(event) {
 
+		event.preventDefault();
+
 		let selectedAnswer = $('input:checked').val();
 		let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
 
-		event.preventDefault();
 
-		if (selectedAnswer === correctAnswer ) {
+		if (selectedAnswer === correctAnswer) {
 			ifAnswerIsCorrect();
 		} else {
 			ifAnswerIsWrong();
@@ -172,6 +174,18 @@ function renderNextQuestion() {
 		// on button(next) click =>
 			// render next question html
 			// increment question # by 1
+
+	$('.js-question-form').on('click', '.js-next-question', function(event) {
+
+		incrementQuestionNumber();
+
+		renderQuestion();
+
+		userSubmitAnswer();
+
+	});
+
+
 	console.log(`renderNextQuestion ran`);
 }
 
