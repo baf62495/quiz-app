@@ -87,12 +87,12 @@ function userSubmitAnswer() {
 	// user submits answer
 		// when user submits answer =>
 			// check answer
-	$('.js-question-form').on('submit', function(event) {
+	$('form').on('submit', function(event) {
 
 		event.preventDefault();
 
 		let selectedAnswer = $('input:checked').val();
-		let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
+		let correctAnswer = STORE[questionNumber].correctAnswer;
 
 
 		if (selectedAnswer === correctAnswer) {
@@ -133,11 +133,11 @@ function renderCorrectAnswerHtml() {
 	// generate correct answer html
 
 	$('.question-form').html(`<div class="feedback feedback-correct">
-										<h1>Correct!</h1>
-										<h2>${STORE[questionNumber].answerStatement}</h2>
-										<button type="submit" class="button js-next-question">Next Question</button>
-									</div>
-									`);
+									<h1>Correct!</h1>
+									<h2>${STORE[questionNumber].answerStatement}</h2>
+									<button type="button" class="button js-next-question">Next Question</button>
+								</div>
+								`);
 
 	console.log(`renderCorrectAnswerHtml ran`);
 }
@@ -146,12 +146,13 @@ function renderWrongAnswerHtml() {
 	// generate wrong answer html
 
 	let selectedAnswer = $('input:checked').val();
+	console.log(`renderWrong - ${selectedAnswer}`);
 
 	$('.question-form').html(`<div class="feedback feedback-wrong">
 										<h1>Incorrect!</h1>
 										<h2>${STORE[questionNumber].answerStatement}</h2>
 										<p class="user-answer">You answered: ${selectedAnswer}</p>
-										<button type="submit" class="button js-next-question">Next Question</button>
+										<button type="button" class="button js-next-question">Next Question</button>
 									</div>
 									`);
 

@@ -56,11 +56,11 @@ const STORE = [
 			'7'
 			],
 		correctAnswer: '4',
-		answerStatement: `The Devils swept the 1995 Stanley Cup Finals in 4 games!`,
+		answerStatement: `The Devils swept the 1995 Stanley Cup Finals in just 4 games!`,
 		funFact: 'In the 1995 season, the Devils captured their first Stanley Cup in a 4 game sweep, of the heavily favored Detroit Red Wings.'
 	},
 	{
-		question: 'At the start of the Devils franchise, where did they play and what was their team name?',
+		question: 'At the start of the Devils\' franchise, where did they play and what was their team name?',
 		answerChoices: [
 			'Kansas City Scouts',
 			'Colorado Rockies',
