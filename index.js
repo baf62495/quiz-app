@@ -35,6 +35,7 @@ function generateQuestionHtml() {
 	} else {
 		renderResults();
 		restartQuiz();
+		alert('done');
 	}
 
 	console.log(`generateQuestionHtml ran`);
