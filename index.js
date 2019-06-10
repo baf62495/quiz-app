@@ -146,7 +146,6 @@ function renderWrongAnswerHtml() {
 	// generate wrong answer html
 
 	let selectedAnswer = $('input:checked').val();
-	console.log(`renderWrong - ${selectedAnswer}`);
 
 	$('.question-form').html(`<div class="feedback feedback-wrong">
 										<h1>Incorrect!</h1>
