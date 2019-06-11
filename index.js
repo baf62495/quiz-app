@@ -33,9 +33,9 @@ function generateQuestionHtml() {
 					</form>
 				</div>`
 	} else {
+		$('.quiz-head').css('display', 'none');
 		renderResults();
 		restartQuiz();
-		alert('done');
 	}
 
 	console.log(`generateQuestionHtml ran`);
@@ -203,6 +203,13 @@ function renderResults() {
 			// if fail
 				// render fail feedback html
 				// add score to feedback html
+
+	if (userScore > 6) {
+		$('.js-question-form').html(`<h2>heya</h2>`);
+	} else {
+		$('.js-question-form').html('<h2>noya</h2>');
+	}
+
 	console.log(`renderResults ran`);
 }
 
