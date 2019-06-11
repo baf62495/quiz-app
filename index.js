@@ -149,12 +149,12 @@ function renderWrongAnswerHtml() {
 	let selectedAnswer = $('input:checked').val();
 
 	$('.question-form').html(`<div class="feedback feedback-wrong">
-										<h1>Incorrect!</h1>
-										<h2>${STORE[questionNumber].answerStatement}</h2>
-										<p class="user-answer">You answered: ${selectedAnswer}</p>
-										<button type="button" class="button js-next-question">Next Question</button>
-									</div>
-									`);
+									<h1>Incorrect!</h1>
+									<h2>${STORE[questionNumber].answerStatement}</h2>
+									<p class="user-answer">You answered: ${selectedAnswer}</p>
+									<button type="button" class="button js-next-question">Next Question</button>
+								</div>
+								`);
 
 	console.log(`renderWrongAnswerHtml ran`);
 }
@@ -205,9 +205,19 @@ function renderResults() {
 				// add score to feedback html
 
 	if (userScore > 6) {
-		$('.js-question-form').html(`<h2>heya</h2>`);
+		$('.js-question-form').html(`<div class="results">
+										<h1>Great Job!</h1>
+										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
+										<p>You're a true New Jersey Devils fan!</p>
+										<button type="button" class="button js-restart-button">Restart Quiz</button>
+									</div>`);
 	} else {
-		$('.js-question-form').html('<h2>noya</h2>');
+		$('.js-question-form').html(`<div class="results">
+										<h1>Try Again!</h1>
+										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
+										<p>Better luck next time.</p>
+										<button type="button" class="button js-restart-button">Restart Quiz</button>
+									</div>`);
 	}
 
 	console.log(`renderResults ran`);
@@ -215,6 +225,11 @@ function renderResults() {
 
 function restartQuiz() {
 	// reload page on button click
+
+	$('.js-question-form').on('click', '.js-restart-button', function(event) {
+		location.reload();
+	});
+
 }
 
 
