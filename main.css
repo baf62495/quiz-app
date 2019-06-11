@@ -21,13 +21,41 @@ header {
 	margin: auto;
 }
 
+figure {
+	margin: 0;
+}
+
 header img {
 	margin-bottom: 40px;
 }
 
-figure {
-	margin: 0;
+fieldset {
+	border: none;
+	padding: 0;
+	text-align: center;
 }
+
+label,
+button {
+	border-radius: 2em;
+}
+
+input[type=radio] {
+	margin-right: 12px;
+}
+
+button {
+	background-color: #CE1126;
+	border: none;
+	color: #FCFCFC;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 14px 52px;
+	transition: .2s;
+}
+	button:hover {
+		background-color: #B50E22;
+	}
 
 h2 {
 	line-height: 1.2em;
@@ -74,17 +102,6 @@ h2 {
 	margin-left: auto;
 }
 
-fieldset {
-	border: none;
-	padding: 0;
-	text-align: center;
-}
-
-.answer-option,
-button {
-	border-radius: 2em;
-}
-
 .answer-option {
 	align-items: center;
 	border: 1px solid black;
@@ -93,24 +110,7 @@ button {
 	padding: 16px;
 }
 
-input[type=radio] {
-	margin-right: 12px;
-}
-
-button {
-	background-color: #CE1126;
-	border: none;
-	color: #FCFCFC;
-	cursor: pointer;
-	font-weight: bold;
-	padding: 14px 52px;
-	transition: .2s;
-}
-	button:hover {
-		background-color: #B50E22;
-	}
-
-.submit-button {
-	margin: auto;
-	padding: 12px;
+.feedback,
+.results {
+	text-align: center;
 }
