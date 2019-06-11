@@ -28,7 +28,7 @@ function generateQuestionHtml() {
 								<input type="radio" name="answer" value="${STORE[questionNumber].answerChoices[3]}" required>
 								<span>${STORE[questionNumber].answerChoices[3]}</span>
 							</label>
-							<button type="submit" class="submit-button js-submit-button">Submit</button> 
+							<button type="submit" class="button js-submit-button">Submit</button> 
 						</fieldset>
 					</form>
 				</div>`
@@ -208,6 +208,9 @@ function renderResults() {
 
 	if (userScore > 6) {
 		$('.js-question-form').html(`<div class="results">
+										<figure>
+											<img src="assets/logo-lg.jpg" alt="Main Logo" class="logo-lg">
+										</figure>
 										<h1>Great Job!</h1>
 										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
 										<p>You're a true New Jersey Devils fan!</p>
@@ -215,6 +218,9 @@ function renderResults() {
 									</div>`);
 	} else {
 		$('.js-question-form').html(`<div class="results">
+										<figure>
+											<img src="assets/logo-lg.jpg" alt="Main Logo" class="logo-lg">
+										</figure>
 										<h1>Try Again!</h1>
 										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
 										<p>Better luck next time.</p>
