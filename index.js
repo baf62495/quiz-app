@@ -137,6 +137,7 @@ function renderCorrectAnswerHtml() {
 									<h1>Correct!</h1>
 									<h2>${STORE[questionNumber].answerStatement}</h2>
 									<button type="button" class="button js-next-question">Next Question</button>
+									<p class="feedback-fact">${STORE[questionNumber].funFact}</p>
 								</div>
 								`);
 
@@ -153,6 +154,7 @@ function renderWrongAnswerHtml() {
 									<h2>${STORE[questionNumber].answerStatement}</h2>
 									<p class="user-answer">You answered: ${selectedAnswer}</p>
 									<button type="button" class="button js-next-question">Next Question</button>
+									<p class="feedback-fact">${STORE[questionNumber].funFact}</p>
 								</div>
 								`);
 
