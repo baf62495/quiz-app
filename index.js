@@ -28,7 +28,7 @@ function generateQuestionHtml() {
 								<input type="radio" name="answer" value="${STORE[questionNumber].answerChoices[3]}" required>
 								<span>${STORE[questionNumber].answerChoices[3]}</span>
 							</label>
-							<button type="submit" class="button js-submit-button">Submit</button> 
+							<button type="submit" class="button submit-button js-submit-button">Submit</button> 
 						</fieldset>
 					</form>
 				</div>`
@@ -39,6 +39,17 @@ function generateQuestionHtml() {
 	}
 
 	console.log(`generateQuestionHtml ran`);
+}
+
+function addClassToSelected() {
+
+	$('.js-question-form').on('click', 'input[type="radio"]', function () {
+
+	    $('input[type="radio"]:not(:checked)').parent().removeClass("selected");
+	    $('input[type="radio"]:checked').parent().addClass("selected");
+
+	});
+
 }
 
 function incrementQuestionNumber() {
@@ -244,6 +255,7 @@ function restartQuiz() {
 function createQuiz() {
   startQuiz();
   renderQuestion();
+  addClassToSelected();
   userSubmitAnswer();
   renderNextQuestion();
 }

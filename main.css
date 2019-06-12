@@ -3,7 +3,8 @@
 }
 
 html {
-	height: 100vh;
+	height: 100%;
+	overflow: hidden;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 	font-size: 16px;
 	margin: auto;
 	max-width: 768px;
-	min-height: 100vh;
+	min-height: 100%;
 	padding: 36px 20px;
 }
 
@@ -43,13 +44,9 @@ button {
 }
 
 input[type=radio] {
-	margin-right: 12px;
+	opacity: 0;
+	width: 0;
 }
-
-label + input[type="radio"]:checked {
-	background-color: rgba(252, 252, 252, .42);
-	color: pink;
-} 
 
 button {
 	background-color: #CE1126;
@@ -70,6 +67,12 @@ h2 {
 
 .logo-lg {
 	margin-bottom: 40px;
+	width: 182px;
+	height: auto;
+}
+.logo-sm {
+	width: 102px;
+	height: auto;
 }
 
 .question-container {
@@ -100,7 +103,7 @@ h2 {
 .quiz-head {
 	display: flex;
 	flex-wrap: wrap;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #717171;
 }
 
 .quiz-head figure {
@@ -119,7 +122,23 @@ h2 {
 	display: flex;
 	margin-bottom: 16px;
 	padding: 16px;
-}  
+}
+	.answer-option:focus-within {
+		border: 1px solid #FCFCFC;
+	}
+
+.answer-option span {
+	margin: auto;
+}
+
+.selected {
+	background-color: rgba(252, 252, 252, .42);
+	border: 1px solid #FCFCFC;
+}
+
+.submit-button {
+	margin-top: 20px;
+}
 
 .feedback,
 .results {
