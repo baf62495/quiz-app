@@ -7,6 +7,8 @@ html {
 }
 
 body {
+	background-color: #2E2E2E;
+	color: #FCFCFC;
 	display: flex;
 	flex-direction: column;
 	font-family: arial, serif;
@@ -44,6 +46,11 @@ input[type=radio] {
 	margin-right: 12px;
 }
 
+label + input[type="radio"]:checked {
+	background-color: rgba(252, 252, 252, .42);
+	color: pink;
+} 
+
 button {
 	background-color: #CE1126;
 	border: none;
@@ -70,13 +77,17 @@ h2 {
 }
 
 .question,
-.question-form {
+.question-form,
+.feedback,
+.results {
 	display: flex;
 }
 
 .question-form,
 .question,
-.question-container {
+.question-container,
+.feedback,
+.results {
 	flex-grow: 1;
 	flex-direction: column;
 }
@@ -104,7 +115,7 @@ h2 {
 
 .answer-option {
 	align-items: center;
-	border: 1px solid black;
+	border: 1px solid #717171;
 	display: flex;
 	margin-bottom: 16px;
 	padding: 16px;
@@ -113,4 +124,8 @@ h2 {
 .feedback,
 .results {
 	text-align: center;
+}
+
+.feedback-fact {
+	margin-top: auto;
 }

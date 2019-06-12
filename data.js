@@ -17,7 +17,7 @@ const STORE = [
 			'Scott Stevens',
 			'Claude Lemieux',
 			'Neal Broten',
-			'Stephan Richer'
+			'Stephane Richer'
 			],
 		correctAnswer: 'Neal Broten',
 		answerStatement: `Neal Broten scored the Stanley Cup winning goal for the Devils in 1995!`,
