@@ -98,6 +98,7 @@ h2 {
 
 .question h2 {
 	flex-grow: 1;
+	font-size: 1.375em;
 	max-height: 160px;
 }
 
