@@ -82,8 +82,16 @@ header img {
 	margin-bottom: 40px;
 }
 
-.results img {
-	margin-bottom: 40px;
+.results figure {
+	margin-top: auto;
+}
+
+.results h1 {
+	margin: 36px 0 0;
+}
+
+.results button {
+	margin-bottom: auto;
 }
 
 .question-container {
@@ -150,7 +158,6 @@ header img {
 	transition: .2s
 }
 	.answer-option:hover {
-		border: 1px solid #FCFCFC;
 		cursor: pointer;
 	}
 	.answer-option:focus-within {
