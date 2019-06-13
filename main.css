@@ -9,7 +9,12 @@ body {
 }
 
 body {
+    background-blend-mode: overlay;
 	background-color: #2E2E2E;
+	background-image: url(assets/prud-center.jpg), linear-gradient(rgba(46,46,46,0.9),rgba(46,46,46,0.9));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	color: #FCFCFC;
 	display: flex;
 	flex-direction: column;
@@ -151,7 +156,7 @@ header img {
 
 .answer-option {
 	align-items: center;
-	border: 1px solid #717171;
+	border: 1px solid #C7C7C7;
 	display: flex;
 	margin-bottom: 16px;
 	padding: 16px;
