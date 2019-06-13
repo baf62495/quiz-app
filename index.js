@@ -1,7 +1,6 @@
 
-let questionNumber = 0;
-let userScore = 0;
-
+var questionNumber = 0;
+var userScore = 0;
 
 function generateQuestionHtml() {
 
