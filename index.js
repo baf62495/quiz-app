@@ -147,7 +147,7 @@ function renderCorrectAnswerHtml() {
 	$('.question-form').html(`<div class="feedback feedback-correct">
 									<h1>Correct!</h1>
 									<h2>${STORE[questionNumber].answerStatement}</h2>
-									<button type="button" class="button js-next-question">Next Question</button>
+									<button type="button" class="button next-button js-next-button">Next Question</button>
 									<p class="feedback-fact">${STORE[questionNumber].funFact}</p>
 								</div>
 								`);
@@ -164,7 +164,7 @@ function renderWrongAnswerHtml() {
 									<h1>Incorrect!</h1>
 									<h2>${STORE[questionNumber].answerStatement}</h2>
 									<p class="user-answer">You answered: ${selectedAnswer}</p>
-									<button type="button" class="button js-next-question">Next Question</button>
+									<button type="button" class="button next-button js-next-button">Next Question</button>
 									<p class="feedback-fact">${STORE[questionNumber].funFact}</p>
 								</div>
 								`);
@@ -189,7 +189,7 @@ function renderNextQuestion() {
 			// render next question html
 			// increment question # by 1
 
-	$('.js-question-form').on('click', '.js-next-question', function(event) {
+	$('.js-question-form').on('click', '.js-next-button', function(event) {
 
 		incrementQuestionNumber();
 
@@ -220,7 +220,7 @@ function renderResults() {
 	if (userScore > 6) {
 		$('.js-question-form').html(`<div class="results">
 										<figure>
-											<img src="assets/logo-lg.jpg" alt="Main Logo" class="logo-lg">
+											<img src="assets/new-jersey-devils-logo.svg" alt="New Jersey Devils Logo" class="logo-lg">
 										</figure>
 										<h1>Great Job!</h1>
 										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
@@ -230,7 +230,7 @@ function renderResults() {
 	} else {
 		$('.js-question-form').html(`<div class="results">
 										<figure>
-											<img src="assets/logo-lg.jpg" alt="Main Logo" class="logo-lg">
+											<img src="assets/new-jersey-devils-logo.svg" alt="New Jersey Devils Logo" class="logo-lg">
 										</figure>
 										<h1>Try Again!</h1>
 										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
