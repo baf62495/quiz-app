@@ -225,7 +225,7 @@ function renderResults() {
 										<h1>Great Job!</h1>
 										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
 										<p>You're a true New Jersey Devils fan!</p>
-										<button type="button" class="button js-restart-button">Restart Quiz</button>
+										<button type="button" class="button restart-button js-restart-button">Restart Quiz</button>
 									</div>`);
 	} else {
 		$('.js-question-form').html(`<div class="results">
@@ -235,7 +235,7 @@ function renderResults() {
 										<h1>Try Again!</h1>
 										<h2>You answered ${userScore} out of the ${STORE.length} questions correctly.</h2>
 										<p>Better luck next time.</p>
-										<button type="button" class="button js-restart-button">Restart Quiz</button>
+										<button type="button" class="button restart-button js-restart-button">Restart Quiz</button>
 									</div>`);
 	}
 

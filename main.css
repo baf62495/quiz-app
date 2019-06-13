@@ -29,10 +29,6 @@ figure {
 	margin: 0;
 }
 
-header img {
-	margin-bottom: 40px;
-}
-
 fieldset {
 	border: none;
 	padding: 0;
@@ -74,13 +70,20 @@ h2 {
 }
 
 .logo-lg {
-	margin-bottom: 40px;
 	width: 182px;
 	height: auto;
 }
 .logo-sm {
 	width: 82px;
 	height: auto;
+}
+
+header img {
+	margin-bottom: 40px;
+}
+
+.results img {
+	margin-bottom: 40px;
 }
 
 .question-container {
@@ -144,7 +147,12 @@ h2 {
 	display: flex;
 	margin-bottom: 16px;
 	padding: 16px;
+	transition: .2s
 }
+	.answer-option:hover {
+		border: 1px solid #FCFCFC;
+		cursor: pointer;
+	}
 	.answer-option:focus-within {
 		border: 1px solid #FCFCFC;
 	}
@@ -162,7 +170,8 @@ h2 {
 	margin-top: 10px;
 }
 
-.next-button {
+.next-button,
+.restart-button {
 	margin-top: 26px;
 }
 
@@ -171,7 +180,8 @@ h2 {
 	text-align: center;
 }
 
-.user-answer {
+.user-answer,
+.results p {
 	margin: 0 0 16px;
 }
 
